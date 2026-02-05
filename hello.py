@@ -25,7 +25,6 @@ while True:
         
         for sub in subject_list:
             subject_set.add(sub.strip())
-            subject_set.add(sub.strip())
         
         id_dob = (studentId, dob)
         
@@ -52,7 +51,7 @@ while True:
                 print("Subjects:", student["subjects"])
                 
     elif choice == "3":
-        student_id = int(input("Enter student id to update:"))
+        studentId = int(input("Enter student id to update:"))
         found = False
         
         for student in students:
@@ -106,4 +105,5 @@ while True:
         break
     
     else:
+
         print("Invalid choice")
